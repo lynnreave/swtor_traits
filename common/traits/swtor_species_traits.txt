@@ -1,0 +1,91 @@
+############################
+#
+# SWTOR Traits
+#
+############################
+
+trait_force_attuned = {
+	cost = 3
+	icon = "gfx/interface/icons/traits/trait_force_attuned.dds"
+	initial = yes
+	modification = no
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_happiness = 0.12
+		tile_resource_society_research_mult = 0.1
+		leader_age = 30
+		army_damage_mult = 0.1
+		category_force_research_speed_mult = 0.05
+		ship_fire_rate_mult = 0.05
+	}
+}
+
+trait_abundant = {
+	allowed_archetypes = { BIOLOGICAL }
+	cost = 1
+	initial = yes
+	modification = no
+	modifier = {
+		pop_environment_tolerance = 0.05
+		pop_migration_speed = 0.10
+	}
+}
+
+trait_geneticists = {
+	allowed_archetypes = { BIOLOGICAL }
+	cost = 1
+	initial = yes
+	modification = no
+	modifier = {
+		category_biology_research_speed_mult = 0.25
+	}
+}
+
+trait_droid_engineers = {
+	allowed_archetypes = { BIOLOGICAL }
+	cost = 1
+	initial = yes
+	modification = no
+	modifier = {
+		category_industry_research_speed_mult = 0.25
+	}
+}
+
+trait_farming_droid = {
+	cost = 0
+	allowed_archetypes = { ROBOT }
+	initial = no
+	randomized = no
+	modification = no
+	forced_happiness = yes
+
+	modifier = {
+		tile_resource_engineering_research_mult = -0.8
+		tile_resource_physics_research_mult = -0.8
+		tile_resource_society_research_mult = -0.8
+		tile_resource_energy_mult = -0.4
+		tile_resource_minerals_mult = -0.10
+		tile_resource_food_mult = 0.40
+		pop_consumer_goods_mult = -100
+
+	}
+}
+
+trait_protocol_droid = {
+	cost = 0
+	allowed_archetypes = { ROBOT }
+	initial = no
+	randomized = no
+	modification = no
+	forced_happiness = yes
+
+	modifier = {
+		tile_resource_engineering_research_mult = -0.8
+		tile_resource_physics_research_mult = -0.8
+		tile_resource_society_research_mult = -0.8
+		tile_resource_energy_mult = -0.40
+		tile_resource_minerals_mult = -0.40
+		pop_other_species_happiness = 0.05
+		pop_consumer_goods_mult = -100
+	}
+}

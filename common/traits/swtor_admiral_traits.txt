@@ -1,0 +1,108 @@
+#####################
+# Admiral Traits    #
+#####################
+
+leader_trait_adm_force_user_I = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_force_user.dds"
+	modifier = {
+		ship_emergency_ftl_mult = -0.20
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+		ship_sensor_range_add = 2
+	}
+
+	ai_weight = {
+		weight = 200
+	}
+
+	can_retreat = yes
+	leader_trait = yes
+	leader_class = { admiral }
+	leader_potential_add = {
+		OR = {
+			from = {
+				has_ethic = ethic_light_side
+				has_ethic = ethic_dark_side
+				has_trait = trait_latent_psionic
+				has_trait = trait_psionic
+			}
+		}
+		NOT = {
+			from = {
+				has_authority = "auth_machine_intelligence"
+			}
+		}
+	}
+}
+
+leader_trait_adm_force_user_II = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_force_user.dds"
+	modifier = {
+		ship_emergency_ftl_mult = -0.25
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.10
+		ship_sensor_range_add = 1
+	}
+
+	ai_weight = {
+		weight = 250
+	}
+
+	can_retreat = yes
+	leader_trait = yes
+	leader_class = { admiral }
+	leader_potential_add = {
+		OR = {
+			from = {
+				has_ethic = ethic_light_side
+				has_ethic = ethic_dark_side
+				has_trait = trait_latent_psionic
+				has_trait = trait_psionic
+			}
+		}
+		NOT = {
+			from = {
+				has_authority = "auth_machine_intelligence"
+			}
+		}
+	}
+}
+
+leader_trait_adm_force_user_III = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_powerful_force_user.dds"
+	modifier = {
+		ship_emergency_ftl_mult = -0.30
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_sensor_range_add = 3
+	}
+
+	ai_weight = {
+		weight = 300
+	}
+
+	can_retreat = yes
+	leader_trait = yes
+	leader_class = { admiral }
+	leader_potential_add = {
+		OR = {
+			from = {
+				has_ethic = ethic_light_side
+				has_ethic = ethic_dark_side
+				has_trait = trait_latent_psionic
+				has_trait = trait_psionic
+			}
+		}
+		NOT = {
+			from = {
+				has_authority = "auth_machine_intelligence"
+			}
+		}
+	}
+}

@@ -1,0 +1,99 @@
+##################
+# General Traits #
+##################
+
+leader_trait_gen_force_user_I = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_force_user.dds"
+	modifier = {
+		army_morale = 0.05
+		army_damage_mult = 0.1
+	}
+	
+	ai_weight = {
+		weight = 200
+	}
+	
+	leader_trait = yes
+	leader_class = { general }
+	leader_potential_add = {
+		OR = {
+			from = {
+				has_ethic = ethic_light_side
+				has_ethic = ethic_dark_side
+				has_trait = trait_latent_psionic
+				has_trait = trait_psionic
+			}
+		}
+		NOT = { 
+			from = { 
+				has_authority = "auth_machine_intelligence" 
+			} 
+		}
+	}
+}
+
+leader_trait_gen_force_user_II = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_force_user.dds"
+	modifier = {
+		army_morale = 0.10
+		army_damage_mult = 0.1
+	}
+	
+	ai_weight = {
+		weight = 250
+	}
+	
+	leader_trait = yes
+	leader_class = { general }
+	leader_potential_add = {
+		OR = {
+			from = {
+				has_ethic = ethic_light_side
+				has_ethic = ethic_dark_side
+				has_trait = trait_latent_psionic
+				has_trait = trait_psionic
+			}
+		}
+		NOT = { 
+			from = { 
+				has_authority = "auth_machine_intelligence" 
+			} 
+		}
+	}
+}
+
+leader_trait_gen_force_user_III = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_powerful_force_user.dds"
+	modifier = {
+		army_morale = 0.25
+		army_damage_mult = 0.25
+	}
+	
+	ai_weight = {
+		weight = 300
+	}
+	
+	leader_trait = yes
+	leader_class = { general }
+	leader_potential_add = {
+		OR = {
+			from = {
+				has_ethic = ethic_light_side
+				has_ethic = ethic_dark_side
+				has_trait = trait_latent_psionic
+				has_trait = trait_psionic
+			}
+		}
+		NOT = { 
+			from = { 
+				has_authority = "auth_machine_intelligence" 
+			} 
+		}
+	}
+}
